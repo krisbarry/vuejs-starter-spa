@@ -1,4 +1,4 @@
-# acme-transit
+# vuejs-starter-spa
 
 ## Project setup
 ```

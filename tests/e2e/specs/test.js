@@ -1,8 +1,15 @@
 // https://docs.cypress.io/api/introduction/api.html
 
-describe('My First Test', () => {
-  it('Visits the app root url', () => {
+describe('Home Page Test', () => {
+  it('Visits the app home page', () => {
     cy.visit('/')
-    cy.contains('h1', 'Welcome to Your Vue.js + TypeScript App')
+    cy.contains('p', 'Welcome to the Vue.js Starter SPA')
+  })
+})
+
+describe('Search Results Page Test', () => {
+  it('Visits the app search results page', () => {
+    cy.visit('/search/test')
+    cy.contains('p', 'Search results for "test"')
   })
 })
